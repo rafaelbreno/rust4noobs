@@ -2,6 +2,7 @@
 
 ### Summary
 1. [Basic Example](#basic-example)
+2. [Comments](#comments)
 
 ### Basic example
 So, as usual, let's start with a simple program that writes: _Hello, World!_
@@ -26,3 +27,19 @@ To run it is pretty simple:
   - > ./hello_world
 
 Congrats! You've written your first Rust program.
+
+### Comments
+In Rust there's two types of comments:
+- One line comments(`// comment`):
+```rust
+// This is a One Line comment
+// This is another One Line comment
+```
+
+- Multi-line comments(`/* comment */`):
+```rust
+/* 
+  This is a One Line comment
+  This is another One Line comment
+*/
+```
