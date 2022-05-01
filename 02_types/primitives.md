@@ -17,7 +17,7 @@
 - arrays like `[1, 2, 3]`
 - tuples like `(1, true)`
 
-### Mut keyword
+### `mut` keyword
 Variables in Rust are _immutable_ (value is constant), unless it's prefixed by `mut`
 - Mutable variable types can be inferred
 - __Cannot__ change it's type
@@ -32,6 +32,12 @@ mutable = true;
 // Variables can be overwritten with shadowing.
 let mutable = true;
 ```
+
+### `const` keyword
+- You aren’t allowed to use mut with constants
+- They’re always immutable
+- You declare constants using the `const` keyword
+- The type of the value __MUST__ be annotated
 
 ### Example
 ```rust
