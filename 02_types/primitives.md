@@ -67,3 +67,21 @@ fn main() {
     let mutable = true;
 }
 ```
+
+### Array
+- Array can be declared as `let slice: [i32; 5] = [1,2,3,4,5];`, where:
+  - `let` - the _keyword_ to declare a expression
+  - `slice` - the name
+  - `:` - type identifyer
+  - `[T: L]` - to define it's a array of type `T` and length of `L`
+  - `=` - declare that the next expression it's their value
+  - `[1,2,3,4,5]` = the value
+
+```rust
+fn main() {
+    let slice: [i32; 5] = [1,2,3,4,5];
+    
+    println!("{:?}", slice[0]);
+}
+```
+
