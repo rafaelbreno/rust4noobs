@@ -12,3 +12,9 @@ A beginner friendly Rust Guide.
   - Formatting
 - [02 - Types](./02_types/README.md)
   - Primitives
+  - Array
+  - Tuple
+- [03 - Custom Types](./03_custom_types/README.md)
+  - Struct
+  - Enum
+  - Constant
