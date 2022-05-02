@@ -76,6 +76,9 @@ fn main() {
   - `[T: L]` - to define it's a array of type `T` and length of `L`
   - `=` - declare that the next expression it's their value
   - `[1,2,3,4,5]` = the value
+- You can access an element of position `N` using:
+  - `slice[N]` - will access the value of position `N`
+  - If the length of _slice_ is less than `N`, it won't compile.
 
 ```rust
 fn main() {
@@ -85,3 +88,23 @@ fn main() {
 }
 ```
 
+### Tuple
+- A tuple is a collection of values of different types. 
+- Tuples are constructed using parentheses `()`, and each tuple itself is a value with type signature (T1, T2, ...), where T1, T2 are the types of its members. 
+- Functions can use tuples to return multiple values, as tuples can hold any number of values.
+- You can access an element of position `N` using:
+  - `tuple.N` - will access the value of position `N`
+  - If the length of _tuple_ is less than `N`, it won't compile.
+
+```rust
+fn main() {
+    // A tuple with a bunch of different types
+    let long_tuple = (1u8, 2u16, 3u32, 4u64,
+                      -1i8, -2i16, -3i32, -4i64,
+                      0.1f32, 0.2f64,
+                      'a', true);
+
+    println!("First element: {}", long_tuple.0);
+    println!("Second element: {}", long_tuple.1);
+}
+```
