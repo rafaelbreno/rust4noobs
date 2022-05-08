@@ -3,6 +3,7 @@
 ### Summary
 - [Struct](#struct)
 - [Enum](#enum)
+- [Enum C-like](#enum-c-like)
 - [Constant](#constant)
 
 ### Struct
@@ -135,5 +136,22 @@ fn main() {
     inspect_quality(p);
     inspect_quality(m);
     inspect_quality(h);
+}
+```
+
+### Enum C-like
+- Enums also can be use as [C-like](https://en.wikipedia.org/wiki/Enumerated_type#C)
+
+```rust
+enum Number {
+    Zero = 0,
+    One = 1,
+    Two = 2,
+}
+
+fn main() {
+    println!("{}", Number::Zero as i32);
+    println!("{}", Number::One as i32);
+    println!("{}", Number::Two as i32);
 }
 ```
